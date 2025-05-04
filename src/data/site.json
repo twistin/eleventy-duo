@@ -1,6 +1,6 @@
 {
-  "name": "Eleventy Duo",
-  "description": "Eleventy Duo is a minimal and beautiful Eleventy theme for personal blogs.",
+  "name": "Música, escenas, identidades y otras cosas tecnológicas ",
+  "description": "Exploro en este blog las ricas conexiones entre música, identidad y migración, un territorio central en mi trabajo de doctorado. Este espacio también servirá para indagar en las posibilidades que la inteligencia artificial y la tecnología ofrecen como potentes instrumentos para la investigación académica.",
   "url": "https://eleventyduo.netlify.app",
   "author": {
     "name": "Author Name",
@@ -23,17 +23,22 @@
   "socialLinks": [
     {
       "text": "Instagram",
-      "url": "https://instagram.com/",
+      "url": "https://www.instagram.com/silvinodiazcarreras/",
       "external": true
     },
     {
       "text": "GitHub",
-      "url": "https://github.com/yinkakun/eleventy-duo",
+      "url": "https://github.com/twistin",
       "external": true
     },
     {
       "text": "Twitter",
-      "url": "https://twitter.com/",
+      "url": "https://x.com/twistin_24",
+      "external": true
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/silvino.diazcarreras",
       "external": true
     }
   ],

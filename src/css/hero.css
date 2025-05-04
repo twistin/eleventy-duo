@@ -1,47 +1,62 @@
 .hero {
-  display: flex;
-  flex-direction: column;
+  background-color: #333;
+  /* Amarillo */
+  color: #333;
+  /* Color de texto por defecto (lo ajustaremos para contraste) */
+  padding: 40px;
+  border-radius: 0;
+  /* Para que ocupe todo el ancho, quitamos los bordes redondeados */
+  margin-bottom: 30px;
+  width: 100%;
+  /* Ocupar todo el ancho */
+  box-sizing: border-box;
+  /* Incluir el padding y el borde en el ancho */
 }
 
-.hero h1 {
-  font-size: var(--text-5xl);
+.hero-content {
+  /* Puedes seguir usando un contenedor con un ancho máximo si no quieres que el contenido se estire demasiado */
+  /* Por ejemplo: */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.hero p {
-  font-size: var(--text-2xl);
-  margin-top: 1rem;
+/* Aquí faltaba cerrar la llave */
+
+.intro h1 {
+  font-family: "Titan One", sans-serif;
+  /* Usamos el nombre exacto de la fuente */
+  font-weight: 400;
+  /* Especificamos el peso regular (aunque suele ser el predeterminado) */
+  font-style: normal;
+  /* Aseguramos que no esté en itálica */
+  font-size: 5em;
+  /* Ajusta el tamaño si es necesario */
+  margin-bottom: 15px;
+  color: #FFFFFF;
+  /* Tu color de texto */
 }
 
+.intro p {
+ 
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #FFFFFF;
+  /* Un gris oscuro para el texto principal suele funcionar bien con amarillo */
+}
+
+/* Estilos para los enlaces sociales (sin cambios relevantes para esto) */
 .hero__social-links {
+   font-family: "Titan One", sans-serif;
+    color: #FFFFFF;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 200px;
   display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin-top: 2rem;
-  text-transform: uppercase;
+  gap: 15px;
 }
 
-.hero__social-links > li {
-  margin-right: 2rem;
-  margin-top: 1rem;
-}
-
-.hero__skip-link {
-  align-self: center;
-  cursor: pointer;
-  position: absolute;
-  bottom: 2rem;
-  border: 2px solid rgb(0, 0, 0, 0.4);
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.hero__skip-link svg {
-  transition: opacity 0.2s ease-in-out;
-  stroke: rgb(0, 0, 0, 0.4);
-  /* color: rgb(41, 41, 41); */
+.hero__social-links li a {
+  text-decoration: none;
 }
