@@ -1,6 +1,6 @@
 [build]
-  command = "yarn run build"
+  command = "git submodule update --init --recursive && yarn run build"
   publish = "public"
 
 [build.environment]
-  NODE_VERSION = "18" # Ajusta según tu versión local (verifica con `node -v`)
+  NODE_VERSION = "18"

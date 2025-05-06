@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="es"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{# Título #}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;{{ title or site.name }}&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{# Descripción #}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% set desc = description %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% if not desc %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% set desc = content | striptags | truncate(140) %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% endif %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="{{ desc or site.description }}"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{# Open Graph / Facebook #}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta property="og:type" content="website"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta property="og:url" content="{{ site.url }}{{ page.url | url }}"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta property="og:title" content="{{ title or site.name }}"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta property="og:description" content="{{ desc or site.description }}"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{# Twitter Card #}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="twitter:card" content="summary_large_image"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="twitter:title" content="{{ title or site.name }}"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="twitter:description" content="{{ desc or site.description }}"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{# Imagen social #}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% if not socialImage %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% set socialImage = site.defaultSocialImage %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% endif %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% if socialImage %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta property="og:image" content="{{ site.url }}{{ socialImage | url }}"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="twitter:image" content="{{ site.url }}{{ socialImage | url }}"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% endif %}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% if site.author.twitterHandle %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="twitter:creator" content="@{{ site.author.twitterHandle }}"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% endif %}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% bundledcss %}</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{# Header y navegación #}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ site.name }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% if site.headerLinks %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% for item in site.headerLinks %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% set currentAttribute = '' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% set externalAttribute = '' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if item.external %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if page.url == item.url %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{% set currentAttribute = 'aria-current="page"' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="{{ item.url }}" {{ currentAttribute }} {{ externalAttribute }}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ item.text }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endfor %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% endif %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{# Contenido principal #}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{{ content | safe }}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{# Footer #}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% if site.socialLinks %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% for item in site.socialLinks %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% set externalAttribute = '' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if item.external %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="{{ item.url }}" {{ externalAttribute }}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ item.text }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endfor %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% endif %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% if site.footerLinks %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% for item in site.footerLinks %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% set externalAttribute = '' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% if item.external %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>{% endif %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="{{ item.url }}" {{ externalAttribute }}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{{ item.text }}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>{% endfor %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% endif %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% if site.showFooterAttribution %}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Created by Yinka, Powered by 11ty, Checkout project's github repo&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% endif %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>{% bundledjs %}</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
