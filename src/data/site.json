@@ -1,10 +1,10 @@
 {
   "name": "Música, escenas, identidades y otras cosas tecnológicas ",
-  "description": "Exploro en este blog las ricas conexiones entre música, identidad y migración, un territorio central en mi trabajo de doctorado. Este espacio también servirá para indagar en las posibilidades que la inteligencia artificial y la tecnología ofrecen como potentes instrumentos para la investigación académica.",
-  "url": "https://eleventyduo.netlify.app",
+  "description":  "Blog sobre música, identidad y migración, explorando la inteligencia artificial en investigación académica.",
+  "url": "https://armoniasdelyo.netlify.app/",
   "author": {
-    "name": "Author Name",
-    "email": "author@site.com",
+    "name": "sdCarr",
+    "email": "sarerac@gmail.com",
     "twitterHandle": "author_handle"
   },
   "defaultSocialImage": "/images/default-social-image.png",
