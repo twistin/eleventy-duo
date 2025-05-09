@@ -1,9 +1,12 @@
 ---
+
 title: La Escena Musical como Crisol Dinámico: Articulaciones, Luchas y Transformaciones en la Música Popular
 
 date: 2025-09-05
+
 tags: [escenas musicales, straw, música, identidad, globalización]
 layout: post
+
 ---
 
 # La Escena Musical como Crisol Dinámico: Articulaciones, Luchas y Transformaciones en la Música Popular
@@ -113,8 +116,6 @@ Shank, Barry. 1994. Dissonant Identities: The Rock'n'Roll Scene in Austin, Texas
 Stahl, Geoff. 2013. Poor But Sexy: Culture Clashes in Berlin and Beyond. Bern: Peter Lang.
 Straw, Will. (Texto provisto por el usuario, presumiblemente basado en una presentación de conferencia y/o un borrador de artículo, con referencias internas como [fuente 1], [fuente 2], etc. Para una cita formal, se necesitaría el título completo y los detalles de publicación si los tuviera. Si este texto es, por ejemplo, una versión de "Systems of Articulation, Logics of Change: Communities and Scenes in Popular Music," Cultural Studies 5 (3): 368-388, la cita sería: Straw, Will. 1991. "Systems of Articulation, Logics of Change: Communities and Scenes in Popular Music." Cultural Studies 5 (3): 368–88. Se asume que el texto de straw.txt es la referencia principal para sus ideas en este paper.)   
 Thornton, Sarah. 1996. Club Cultures: Music, Media and Subcultural Capital. Hanover, NH: Wesleyan University Press.
-
-
 
 ## Música e identidad en movimiento
 
