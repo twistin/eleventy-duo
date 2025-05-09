@@ -1,15 +1,13 @@
 ---
 
-title: La Escena Musical como Crisol Dinámico: Articulaciones, Luchas y Transformaciones en la Música Popular
-
+title: "La Escena Musical como Crisol Dinámico: Articulaciones, Luchas y Transformaciones en la Música Popular"
 date: 2025-09-05
-
 tags: [escenas musicales, straw, música, identidad, globalización]
 layout: post
 
 ---
 
-# La Escena Musical como Crisol Dinámico: Articulaciones, Luchas y Transformaciones en la Música Popular
+
 
 ## Abstract
 
@@ -117,13 +115,11 @@ Stahl, Geoff. 2013. Poor But Sexy: Culture Clashes in Berlin and Beyond. Bern: P
 Straw, Will. (Texto provisto por el usuario, presumiblemente basado en una presentación de conferencia y/o un borrador de artículo, con referencias internas como [fuente 1], [fuente 2], etc. Para una cita formal, se necesitaría el título completo y los detalles de publicación si los tuviera. Si este texto es, por ejemplo, una versión de "Systems of Articulation, Logics of Change: Communities and Scenes in Popular Music," Cultural Studies 5 (3): 368-388, la cita sería: Straw, Will. 1991. "Systems of Articulation, Logics of Change: Communities and Scenes in Popular Music." Cultural Studies 5 (3): 368–88. Se asume que el texto de straw.txt es la referencia principal para sus ideas en este paper.)   
 Thornton, Sarah. 1996. Club Cultures: Music, Media and Subcultural Capital. Hanover, NH: Wesleyan University Press.
 
-## Música e identidad en movimiento
 
-Las prácticas musicales de las personas migrantes no son meras expresiones culturales: son actos de memoria, de negociación identitaria, de resistencia y de creación de comunidad. Cada canción cantada en la lengua de origen, cada ritmo adaptado a un nuevo entorno, cada encuentro musical entre culturas, constituye un territorio de sentido. En ese cruce de caminos, la música funciona como archivo vivo de experiencias, pero también como forma activa de construcción de identidad.
 
-Mi objetivo es pensar la música no como un objeto estático, sino como una práctica social situada, capaz de revelar las tensiones, las continuidades y las transformaciones que se producen en el tránsito migratorio.
 
-## La tecnología como aliada crítica
+
+
 
 Este blog también quiere ser un espacio de experimentación con herramientas tecnológicas, especialmente con aquellas vinculadas a la inteligencia artificial. Lejos de una visión ingenua o tecnófila, me interesa pensar cómo estas tecnologías pueden ser puestas al servicio de una investigación humanista, situada, sensible. ¿Qué posibilidades abre el análisis automático de textos para el estudio de entrevistas? ¿Cómo pueden los modelos generativos ayudar a visualizar, organizar o ampliar las narrativas que emergen de los relatos migratorios? ¿Podemos imaginar una IA que no reemplace, sino que acompañe, que no simplifique, sino que complejice?
 
